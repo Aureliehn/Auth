@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row justify-content-center">
+                <div class="card mt-5 shadow-lg  text-center" style="width: 18rem;">
+                    <img src="{{asset('images/smiley.png')}}" class="card-img-top" alt="Smiley">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Hello!</h5>
+                        <a href="{{ path('connect_google_start')}}"><button class="btn btn-outline-info btn-lg">Se connecter avec Google</button>
+                    </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+{% endblock %}

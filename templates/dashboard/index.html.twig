@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row justify-content-center">
+                <div class="card mt-5 shadow-lg  text-center" style="width: 18rem;">
+                    <img src="{{ app.user.image}}" class="card-img-top" alt="Photo de {{ app.user.fullname}}">
+                    <div class="card-body">
+                        <h5 class="card-title">Bienvenue {{app.user.fullname|upper}}!</h5>
+                        <p>Votre adresse mail: <span class="fw-bold">{{app.user.email}}</span> </p>
+                        <a href="{{ path('logout')}}"><button class="btn btn-danger">Deconnexion</button></a>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+        
+
+</div>
+
+
+{% endblock %}

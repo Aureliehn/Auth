@@ -1,0 +1,20 @@
+https://github.com/knpuniversity/oauth2-client-bundle/blob/master/README.md
+composer require knpuniversity/oauth2-client-bundle
+composer require league/oauth2-google
+
+Créer appli google
+https://developers.google.com/identity/protocols/oauth2/web-server?hl=en
+Renseigner nom du projet + URI + route pr chcker authentification(http://127.0.0.1:8000/connect/google/check)
+= création client Id + client secret
+
+Entrer les id dans .env
+
+configurer dans knpu_oauth_client.yaml
+
+créer le controller qui va dire ce qu'il faut faire sur les 2 routes de directions
+passer le scope dans le redirect
+
+ds security.yaml
+modif main
+
+Créer new dossier= securite -> GoogleAuthenticator
